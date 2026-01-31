@@ -2,9 +2,7 @@ import Foundation
 import CoreLocation
 
 actor WeatherService {
-    // IMPORTANT: Replace with your own OpenWeatherMap API key
-    // Get a free API key at: https://openweathermap.org/api
-    private let apiKey = "YOUR_API_KEY_HERE"
+    private let apiKey = "1410f11f3c2de16d68bdf7929e5ce8bc"
     private let baseURL = "https://api.openweathermap.org/data/2.5/weather"
 
     func fetchWeather(for location: CLLocation) async throws -> WeatherData {
